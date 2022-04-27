@@ -1,0 +1,52 @@
+/* Google Font: Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+
+:root {
+    --main-color: #B000B9;
+    --bg-color: #EADAC6;
+    --bg-header-color: #343A40;
+    --text-header-color: #eee;
+    --text-color: #0D0D0D;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a:visited {
+    color: var(--text-color)
+}
+
+.main-color {
+    color: var(--main-color);
+}
+
+.bg-header-color {
+    background-color: var(--bg-header-color);
+}
+
+.text-header-color {
+    color: var(--text-header-color);
+}
+
+.bg-color {
+    background-color: #EADAC6;
+}
+
+.text-color {
+    color: #0D0D0D;
+}
+
+.btn-outline-main {
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+}
+
+.btn-outline-main:hover {
+    background-color: var(--main-color);
+    color: #fff;
+}

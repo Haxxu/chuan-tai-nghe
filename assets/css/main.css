@@ -1,0 +1,51 @@
+.navbar i {
+    font-size: 1.4rem;
+}
+
+.navbar a.navbar-brand {
+    font-weight: 600;
+}
+
+.navbar a.navbar-brand:visited {
+    color: var(--text-header-color);
+}
+
+.navbar-collapse a {
+    font-weight: 550;
+    /* font-size: 1.4rem; */
+    color: var(--text-header-color);
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: normal;
+}
+
+.navbar-collapse a:visited {
+    color: var(--text-header-color);
+}
+
+.navbar-collapse a:hover {
+    color: var(--main-color);
+}
+
+.dropdown-item {
+    color: var(--text-header-color);
+}
+
+
+/* Carousel */
+
+.slider {
+    border: 1px solid var(--text-color);
+}
+
+.carousel-item {
+    width: 100%;
+    height: 500px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
