@@ -42,6 +42,7 @@
 .carousel-item {
     width: 100%;
     height: 500px;
+    cursor: pointer;
 }
 
 .carousel-item img {
