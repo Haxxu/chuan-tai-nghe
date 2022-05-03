@@ -1,3 +1,4 @@
+/* Header */
 .navbar i {
     font-size: 1.4rem;
 }
@@ -32,6 +33,16 @@
     color: var(--text-header-color);
 }
 
+.cart {
+    position: relative;
+}
+
+.cart span.badge {
+    opacity: 0.85;
+    margin-top: -15px;
+}
+
+/* End Header */
 
 /* Carousel */
 
