@@ -72,7 +72,7 @@
                                     </button>
                                 </form>
                                 <li class="nav-item">
-                                    <a class="nav-link d-flex align-items-center cart" href="">
+                                    <a type="button" data-bs-toggle="modal" data-bs-target="#cartModal" class="nav-link d-flex align-items-center cart" href="">
                                         <span class="badge rounded-pill badge-notification bg-danger">100</span>
                                         <i class='bx bx-cart me-1'></i>
                                         Giỏ hàng
@@ -88,6 +88,72 @@
                     </div>
                 </nav>
 
+            </div>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="cartModalLabel">Giỏ hàng</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <table class="table table-bordered text-center">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Hình ảnh</th>
+                                            <th scope="col">Tên sản phẩm</th>
+                                            <th scope="col">Giá</th>
+                                            <th scope="col">Số lượng</th>
+                                            <th scope="col">Thành tiền</th>
+                                            <th scope="col">Thao tác</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="cart-item align-baseline">
+                                            <td>
+                                                <div class="cart-item-img">
+                                                    <img width="100px" height="100px" src="./assets//images/item-image/item-1.jpg" alt="">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="cart-item-name">
+                                                    SENDY AUDIO PEACOCK
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="cart-item-price">
+                                                    34.500.000 VNĐ
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="cart-item-quantity">
+                                                    <input class="cart-item-quantity-input d-inline" type="number" value="2">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="cart-item-total">
+                                                    69.000.000 VNĐ
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="cart-item-action">
+                                                    <button class="btn btn-danger">Xóa</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </header>
 

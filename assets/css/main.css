@@ -186,3 +186,28 @@
     color: var(--text-header-color);
 }
 /* End Footer */
+
+/* Cart Modal */
+@media (min-width: 576px) {
+    .modal-dialog {
+
+        max-width: 1100px;
+        margin: 1.75rem auto;
+    }
+}
+
+.modal-content {
+    padding: 10px 20px;
+}
+
+.cart-item-img {
+    object-fit: cover;
+    object-position: center;
+}
+
+.cart-item-quantity-input {
+    width: 60px;
+    text-align: center;
+}
+
+/* End Cart Modal */
