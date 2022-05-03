@@ -95,7 +95,10 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="cartModalLabel">Giỏ hàng</h5>
+                            <h5 class="modal-title" id="cartModalLabel">
+                                <i class='bx bx-cart bx-tada bx-rotate-90' ></i>
+                                Giỏ hàng
+                            </h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
@@ -147,10 +150,19 @@
                                     </tbody>
                                 </table>
                             </div>
+                            <div class="row">
+                                <div class="cart-total d-flex justify-content-end">
+                                    Tổng tiền: 
+                                    <span id="total-price">
+                                        69.000.000
+                                    </span>
+                                    VNĐ
+                                </div>
+                            </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                            <button type="button" class="btn btn-primary">Thanh toán</button>
                         </div>
                     </div>
                 </div>
