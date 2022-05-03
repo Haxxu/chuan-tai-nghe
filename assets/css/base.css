@@ -5,7 +5,8 @@
 :root {
     --main-color: #B000B9;
     --bg-color: #EADAC6;
-    --bg-header-color: #343A40;
+    /* --bg-header-color: #343A40; */
+    --bg-header-color: #282d31;
     --text-header-color: #eee;
     --text-color: #0D0D0D;
 }
@@ -35,6 +36,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .bg-header-color {
     background-color: var(--bg-header-color);
+}
+
+.text-header-color {
+    color: var(--text-header-color);
 }
 
 .text-header-color {
