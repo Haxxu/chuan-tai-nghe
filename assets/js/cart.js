@@ -90,6 +90,16 @@ var cart = {
     renderCart: function() {
         $("#cart").empty();
 
+        if (this.productsInCart.length <= 0) {
+            $("#cart").append(`
+                <tr>
+                    <td colspan="6">
+                        Bạn chưa chọn sản phẩm nào
+                    </td>
+                </tr>
+            `);
+        }
+
         this.productsInCart.forEach(product => {
             itemImg = getUrlImage(product.img);
             itemName = product.name;

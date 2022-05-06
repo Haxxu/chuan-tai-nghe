@@ -90,87 +90,90 @@
 
             </div>
             
-            <!-- Modal -->
-            <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 class="modal-title" id="cartModalLabel">
-                                <i class='bx bx-cart bx-tada bx-rotate-90' ></i>
-                                Giỏ hàng
-                            </h4>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+        </header>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="cartModalLabel">
+                            <i class='bx bx-cart bx-tada bx-rotate-90' ></i>
+                            Giỏ hàng
+                        </h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <table class="table table-bordered text-center">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Hình ảnh</th>
+                                        <th scope="col">Tên sản phẩm</th>
+                                        <th scope="col">Giá</th>
+                                        <th scope="col">Số lượng</th>
+                                        <th scope="col">Thành tiền</th>
+                                        <th scope="col">Thao tác</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="cart">
+                                    <!-- <tr class="cart-item align-baseline">
+                                        <td>
+                                            <div class="cart-item-img">
+                                                <img width="100px" height="100px" src="./assets//images/item-image/item-1.jpg" alt="">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="cart-item-name">
+                                                SENDY AUDIO PEACOCK
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="cart-item-price">
+                                                34.500.000 VNĐ
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="cart-item-quantity">
+                                                <input class="cart-item-quantity-input d-inline" type="number" value="2">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="cart-item-total">
+                                                69.000.000 VNĐ
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="cart-item-action">
+                                                <button class="btn btn-danger">Xóa</button>
+                                            </div>
+                                        </td>
+                                    </tr> -->
+                                </tbody>
+                            </table>
                         </div>
-                        <div class="modal-body">
-                            <div class="row">
-                                <table class="table table-bordered text-center">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">Hình ảnh</th>
-                                            <th scope="col">Tên sản phẩm</th>
-                                            <th scope="col">Giá</th>
-                                            <th scope="col">Số lượng</th>
-                                            <th scope="col">Thành tiền</th>
-                                            <th scope="col">Thao tác</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="cart">
-                                        <!-- <tr class="cart-item align-baseline">
-                                            <td>
-                                                <div class="cart-item-img">
-                                                    <img width="100px" height="100px" src="./assets//images/item-image/item-1.jpg" alt="">
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="cart-item-name">
-                                                    SENDY AUDIO PEACOCK
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="cart-item-price">
-                                                    34.500.000 VNĐ
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="cart-item-quantity">
-                                                    <input class="cart-item-quantity-input d-inline" type="number" value="2">
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="cart-item-total">
-                                                    69.000.000 VNĐ
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="cart-item-action">
-                                                    <button class="btn btn-danger">Xóa</button>
-                                                </div>
-                                            </td>
-                                        </tr> -->
-                                    </tbody>
-                                </table>
+                        <div class="row">
+                            <div class="cart-total d-flex justify-content-end">
+                                Tổng tiền: &nbsp;
+                                <span id="total-price">
+                                    <!-- 69.000.000 -->
+                                    0
+                                </span>
+                                    &nbsp;VNĐ
                             </div>
-                            <div class="row">
-                                <div class="cart-total d-flex justify-content-end">
-                                    Tổng tiền: 
-                                    <span id="total-price">
-                                        <!-- 69.000.000 -->
-                                        0
-                                    </span>
-                                     VNĐ
-                                </div>
-                            </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
-                            <a href="" class="payment btn btn-primary text-light">Thanh toán</a>
-                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                        <a href="" class="payment btn btn-primary text-light">Thanh toán</a>
                     </div>
                 </div>
             </div>
-        </header>
+        </div>
 
-        <div class="content my-4 container">
+        <div class="content container">
             <section class="section slider">
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">

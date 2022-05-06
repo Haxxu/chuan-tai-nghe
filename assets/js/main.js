@@ -10,6 +10,7 @@ function getUrlImage(url) {
 $(document).ready(function() {
 
     cart.loadCartFromLocalStorage();
+    cart.renderCart();
     
     products.forEach(product => {
         item = `
