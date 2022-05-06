@@ -60,6 +60,22 @@ var cart = {
         this.renderCart();
         this.saveToLocalStorage();
     },
+    editProduct: function(id, quantity) {
+        this.productsInCart.forEach((product, index) => {
+            if (product.id == id) {
+                oldQuantity = product.quantity; 
+                q =  quantity - oldQuantity;
+
+                product.quantity = quantity
+                product.total = quantity * product.price;
+
+                this.totalQuantity += q;
+                this.totalPrice += q * product.price;
+            }
+        });
+        this.renderCart();
+        this.saveToLocalStorage();
+    },
     saveToLocalStorage: function() {
         localStorage.setItem('cart', JSON.stringify(this));
     },
@@ -101,7 +117,9 @@ var cart = {
                     </td>
                     <td>
                         <div class="cart-item-quantity">
-                            <input class="cart-item-quantity-input d-inline" type="number" value="${itemQuantity}">
+                            <input class="cart-item-quantity-input d-inline" type="number" value="${itemQuantity}"
+                                onchange="cart.editProduct(${itemId}, this.value)" min="1"
+                            >
                         </div>
                     </td>
                     <td>
