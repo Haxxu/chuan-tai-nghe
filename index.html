@@ -73,7 +73,7 @@
                                 </form>
                                 <li class="nav-item">
                                     <a type="button" data-bs-toggle="modal" data-bs-target="#cartModal" class="nav-link d-flex align-items-center cart" href="">
-                                        <span class="badge rounded-pill badge-notification bg-danger">100</span>
+                                        <span id="total-quantity" class="badge rounded-pill badge-notification bg-danger">0</span>
                                         <i class='bx bx-cart me-1'></i>
                                         Giỏ hàng
                                     </a>
@@ -114,8 +114,8 @@
                                             <th scope="col">Thao tác</th>
                                         </tr>
                                     </thead>
-                                    <tbody>
-                                        <tr class="cart-item align-baseline">
+                                    <tbody id="cart">
+                                        <!-- <tr class="cart-item align-baseline">
                                             <td>
                                                 <div class="cart-item-img">
                                                     <img width="100px" height="100px" src="./assets//images/item-image/item-1.jpg" alt="">
@@ -146,7 +146,7 @@
                                                     <button class="btn btn-danger">Xóa</button>
                                                 </div>
                                             </td>
-                                        </tr>
+                                        </tr> -->
                                     </tbody>
                                 </table>
                             </div>
@@ -154,9 +154,10 @@
                                 <div class="cart-total d-flex justify-content-end">
                                     Tổng tiền: 
                                     <span id="total-price">
-                                        69.000.000
+                                        <!-- 69.000.000 -->
+                                        0
                                     </span>
-                                    VNĐ
+                                     VNĐ
                                 </div>
                             </div>
                         </div>
@@ -380,6 +381,8 @@
     <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.js"></script> -->
     <!-- Database -->
     <script src="./assets/products.js"></script>
+    <!-- Cart -->
+    <script src="./assets/js/cart.js"></script>
     <!-- Main JS -->
     <script src="./assets/js/main.js"></script>
 </body>

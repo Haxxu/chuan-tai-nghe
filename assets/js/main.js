@@ -7,8 +7,9 @@ function getUrlImage(url) {
     return './assets/images/item-image/' + url;
 }
 
-
 $(document).ready(function() {
+
+    cart.loadCartFromLocalStorage();
     
     products.forEach(product => {
         item = `
@@ -25,7 +26,7 @@ $(document).ready(function() {
                             ${product.price.formatPrice()} VNĐ
                         </div>
                         <div class="item-control">
-                            <button class="btn" onclick="">
+                            <button class="btn" onclick="cart.addProduct(${product.id}, 1, ${product.price}, '${product.img}', '${product.name}')">
                                 Thêm vào giỏ hàng
                             </button>
                         </div>
