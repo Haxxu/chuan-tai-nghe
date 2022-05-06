@@ -229,3 +229,11 @@
     color: red;
 }
 /* End Cart Modal */
+
+.add-cart-effect {
+    display: none;
+    position: absolute;
+    font-size: 35px;
+    z-index: 9999;
+    color: orange;
+}

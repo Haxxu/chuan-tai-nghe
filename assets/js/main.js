@@ -7,6 +7,12 @@ function getUrlImage(url) {
     return './assets/images/item-image/' + url;
 }
 
+// function addToCartEffect(target) {
+//     t = $(this)
+//     alert('Left: ' + t.position().left + ' Top: ' + t.position().top);
+
+// }
+
 $(document).ready(function() {
 
     cart.loadCartFromLocalStorage();
@@ -27,7 +33,7 @@ $(document).ready(function() {
                             ${product.price.formatPrice()} VNĐ
                         </div>
                         <div class="item-control">
-                            <button class="btn" onclick="cart.addProduct(${product.id}, 1, ${product.price}, '${product.img}', '${product.name}')">
+                            <button class="btn" onclick="cart.addProduct(${product.id}, 1, ${product.price}, '${product.img}', '${product.name}');">
                                 Thêm vào giỏ hàng
                             </button>
                         </div>
@@ -39,6 +45,23 @@ $(document).ready(function() {
         if (product.type === 'headphone') {
             $('#headphone .section-content .row').append($(item));
         }
+    });
+
+    $('.item-control .btn').on('click', function(e) {
+        $('.add-cart-effect').css({
+            "display": 'block',
+            left: e.pageX,
+            top: e.pageY,
+            opacity: 1,
+        });
+        $('.add-cart-effect').animate({
+            left: e.pageX,
+            top: 0,
+            opacity: 0,
+        }, 1000, function() {
+            $('.add-cart-effect').css('display', 'none');
+        });
+
     });
 
 })
