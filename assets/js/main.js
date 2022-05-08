@@ -32,7 +32,7 @@ $(document).ready(function() {
                         <div class="item-price">
                             ${product.price.formatPrice()} VNĐ
                         </div>
-                        <div class="item-control">
+                        <div class="item-control"> 
                             <button class="btn" onclick="cart.addProduct(${product.id}, 1, ${product.price}, '${product.img}', '${product.name}');">
                                 Thêm vào giỏ hàng
                             </button>
@@ -41,6 +41,7 @@ $(document).ready(function() {
                 </div>
             </div>
         `;
+                            
 
         if (product.type === 'headphone') {
             $('#headphone .section-content .row').append($(item));
@@ -58,7 +59,7 @@ $(document).ready(function() {
             left: e.pageX,
             top: 0,
             opacity: 0,
-        }, 1000, function() {
+        }, 600, function() {
             $('.add-cart-effect').css('display', 'none');
         });
         $('#total-quantity').css('animation', 'shakeEffect 0.5s');

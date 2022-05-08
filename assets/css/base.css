@@ -63,3 +63,9 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--main-color);
     color: #fff;
 }
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
