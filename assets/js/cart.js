@@ -89,6 +89,10 @@ var cart = {
     },
     renderCart: function() {
         $("#cart").empty();
+        $('#form-payment #order-total-price').empty();
+        $("#form-payment table tbody").empty();
+        $('#form-payment .order-info .order-quantity').empty()
+
 
         if (this.productsInCart.length <= 0) {
             $("#cart").append(`
@@ -122,7 +126,7 @@ var cart = {
                     </td>
                     <td>
                         <div class="cart-item-price">
-                            ${itemPrice.formatPrice()} VNĐ
+                            ${itemPrice.formatPrice()} &#8363;
                         </div>
                     </td>
                     <td>
@@ -134,7 +138,7 @@ var cart = {
                     </td>
                     <td>
                         <div class="cart-item-total">
-                            ${itemTotal.formatPrice()} VNĐ
+                            ${itemTotal.formatPrice()} &#8363;
                         </div>
                     </td>
                     <td>
@@ -151,6 +155,46 @@ var cart = {
 
         $('#total-price').text(this.totalPrice.formatPrice());
         $('#total-quantity').text(this.totalQuantity);
+
+        $('#order-total-price').html(`Tổng tiền thanh toán: ${cart.totalPrice.formatPrice()} &#8363;`);
+        $('#form-payment .order-info .order-quantity').html(`${cart.totalQuantity} sản phẩm`);
+
+        this.productsInCart.forEach(product => {
+            let imgURL = getUrlImage(product.img);
+            let pName = product.name;
+            let pQuantity = product.quantity;
+            let pTotal = product.total;
+            let html = `
+                <tr>
+                    <td>
+                        <div class="order-item row">
+                            <div class="col-2">
+                                <div class="order-item-img">
+                                    <img width="100%" height="100%" src="${imgURL}" alt="">
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <div class="order-item-name">
+                                     ${pName}
+                                </div>
+                            </div>
+                            <div class="col-1">
+                                <span class="order-item-quantity">
+                                    x${pQuantity}
+                                </span>
+                            </div>
+                            <div class="col-4">
+                                <div class="order-item-price">
+                                    ${pTotal.formatPrice()} &#8363;
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            `;
+
+            $("#form-payment table tbody").append(html);
+        });
     }
 }
 

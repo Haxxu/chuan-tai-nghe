@@ -30,7 +30,7 @@ $(document).ready(function() {
                             ${product.name}
                         </div>
                         <div class="item-price">
-                            ${product.price.formatPrice()} VNĐ
+                            ${product.price.formatPrice()} &#8363;
                         </div>
                         <div class="item-control"> 
                             <button class="btn" onclick="cart.addProduct(${product.id}, 1, ${product.price}, '${product.img}', '${product.name}');">

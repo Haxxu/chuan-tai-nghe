@@ -163,7 +163,7 @@
                                     <!-- 69.000.000 -->
                                     0
                                 </span>
-                                    &nbsp;VNĐ
+                                    &nbsp;&#8363;
                             </div>
                         </div>
                     </div>
@@ -182,8 +182,8 @@
                 <form id="form-payment" class="payment-form container" action="" >
                     <div class="row">
                         <div class="col-7">
-                            <div class="payment-info">
-                                <h5 class="mb-4">Thông tin thanh toán</h5>
+                            <div class="payment-info px-3">
+                                <h5>Thông tin thanh toán</h5>
                                 <div class="mb-3">
                                     <label for="fullname" class="form-label">Họ và tên:</label>
                                     <input type="text" class="form-control" name="fullname" id="fullname">
@@ -204,13 +204,66 @@
                                     <label for="city" class="form-label">Tỉnh / Thành phố:</label>
                                     <input type="text" class="form-control" id="city" name="city">
                                 </div>
+                                <div class="mb-3">
+                                    <label for="payment-method" class="form-label">Phương thức thanh toán:</label>
+                                    <select id="payment-method" name="payment-method" class="form-select">
+                                        <option>Thanh toán khi nhận hàng (COD)</option>
+                                        <option>Thanh toán online và chuyển khoản</option>
+                                        <option>Thanh toán trực tiếp tại cửa hàng</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
                         <div class="col-5">
-                            <div class="order-info">
-                                <h5>Đơn hàng của bạn</h5>
+                            <div class="order-info px-1">
+                                <h5>Đơn hàng của bạn: <span class="order-quantity"></span></h5>
+                                
+                                <table class="table table-bordered">
+                                    <tbody>
+                                        <!-- <tr>
+                                            <td>
+                                                <div class="order-item row">
+                                                    <div class="col-2">
+                                                        <div class="order-item-img">
+                                                            <img width="100%" height="100%" src="./assets/images/item-image/p1.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-5">
+                                                        <div class="order-item-name">
+                                                            Hehe
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime 
+                                                        
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-1">
+                                                        <span class="order-item-quantity">
+                                                            x2
+                                                       </span>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <div class="order-item-price">
+                                                            12.000.00 &#8363;
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr> -->
+                                        
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td>
+                                                <div id="order-total-price" class="order-total-price py-2">
+                                                    
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
                             </div>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quisquam molestiae consequatur tempore velit quis blanditiis earum, eligendi ipsam dolorem sapiente dolor dolores porro? Velit neque ex ab? Laborum, enim.
+                            <button type="submit" class="order-btn btn btn-danger btn-fluid">
+                                Đặt hàng
+                            </button>
                         </div>
                     </div>
                 </form>
@@ -383,53 +436,42 @@
 				rules: {
 					fullname: {
 						required: true,
-						minlength: 5
 					},
-					// fullname: 'required',
-					// password: {
-					// 	required: true,
-					// 	minlength: 8
-					// },
-					// confirm_password: {
-					// 	required: true,
-					// 	minlength: 8,
-					// 	equalTo: '#password'
-					// },
-					// email: {
-					// 	required: true,
-					// 	email: true
-					// },
-                    // birthday: {
-                    //     required: true,
-                    //     date: true
-                    // },
-                    // captcha: {
-                    //     require: true,
-                    //     equalTo: '2'
-                    // }
+                    "phone-number": {
+                        required: true,
+                    },
+					email: {
+						required: true,
+						email: true
+                    },
+                    address: {
+                        required: true,
+                    },
+                    city: {
+                        required: true,
+                    },
+                    "payment-method": {
+                        required: true,
+                    },
 				},
 				messages: {
-					// username: 'Bạn chưa nhập vào tài khoản của bạn', 
 					fullname: 'Bạn chưa nhập vào họ tên của bạn',
-					// username: {
-					// 	required: 'Bạn chưa nhập vào tên đăng nhập',
-					// 	minlength: 'Tên đăng nhập phải có ít nhất 5 ký tự'
-					// },
-					// password: {
-					// 	required: 'Bạn chưa nhập vào mật khẩu',
-					// 	minlength: 'Mật khẩu phải có íi nhất 8 ký tự'
-					// },
-					// confirm_password: {
-					// 	required: 'Bạn chưa nhập vào mật khẩu',
-					// 	minlength: 'Mật khẩu phải có íi nhất 8 ký tự',
-					// 	equalTo: 'Mật khẩu không trùng khớp với mật khẩu đã nhập'
-					// },
-					// email: 'Hộp thư điện tử không hợp lệ',
-                    // birthday: 'Ngày sinh không hợp lệ',
-                    // captcha: {
-					// 	required: 'Bạn chưa nhập mã xác thực',
-					// 	equalTo: 'Mã xác thực không hợp lệ'
-					// },
+                    "phone-number": {
+                        required: 'Bạn chưa nhập vào số điện thoại của bạn',
+                    },
+                    email: {
+                        required: 'Bạn chưa nhập vào email của bạn',
+                        email: 'Email không đúng định dạng'
+                    },
+                    address: {
+                        required: 'Bạn chưa nhập vào địa chỉ của bạn',
+                    },
+                    city: {
+                        required: 'Bạn chưa nhập vào tỉnh / thành phố của bạn',
+                    },
+                    "payment-method": {
+                        required: 'Bạn chưa chọn phương thức thanh toán',
+                    },
 				},
 				errorElement: 'div',
 				errorPlacement: function(error, element) {
