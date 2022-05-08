@@ -61,6 +61,11 @@ $(document).ready(function() {
         }, 1000, function() {
             $('.add-cart-effect').css('display', 'none');
         });
+        $('#total-quantity').css('animation', 'shake 0.5s');
+        setTimeout(function() {
+            $('#total-quantity').css('animation', '');
+        }, 500);
+            
 
     });
 
