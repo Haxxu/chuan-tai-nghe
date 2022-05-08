@@ -11,6 +11,18 @@
     --text-color: #0D0D0D;
 }
 
+/* Custom Scroll Bar */
+html::-webkit-scrollbar {
+    width: 0.5rem;
+    background-color: var(--text-header-color);
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: var(--bg-header-color);
+}
+/* End Custom Scroll Bar */
+
+
 * {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
