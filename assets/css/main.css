@@ -251,3 +251,15 @@
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
+
+/* Payment */
+
+#payment {
+    border-radius: 4px;
+    margin: 20px 0;
+    padding: 30px 10px;
+    background-color: var(--text-header-color);
+    color: var(--text-color);
+}
+
+/* End Payment */
