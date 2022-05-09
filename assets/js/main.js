@@ -17,6 +17,11 @@ $(document).ready(function() {
 
     cart.loadCartFromLocalStorage();
     cart.renderCart();
+
+    var headphoneLimit = 0;
+    var musicPlayerLimit = 0;
+    var speakerLimit = 0;
+    var accessoryLimit = 0;
     
     products.forEach(product => {
         item = `
@@ -41,16 +46,31 @@ $(document).ready(function() {
                 </div>
             </div>
         `;
-                            
 
         if (product.type === 'headphone') {
-            $('#headphone .section-content .row').append($(item));
+            if (headphoneLimit <= 8) {
+                $('#headphone .section-content .row').append($(item));
+                headphoneLimit++;
+            } else 
+                return;
         } else if (product.type === 'music-player') {
-            $('#music-player .section-content .row').append($(item));
+            if (musicPlayerLimit <= 8) {
+                $('#music-player .section-content .row').append($(item));
+                musicPlayerLimit++;
+            } else
+                return;
         } else if (product.type === 'speaker') {
-            $('#speaker .section-content .row').append($(item));
+            if (speakerLimit <= 8) {
+                $('#speaker .section-content .row').append($(item));
+                speakerLimit++;
+            } else
+                return;
         } else if (product.type === 'accessory') {
-            $('#accessory .section-content .row').append($(item));
+            if (accessoryLimit <= 8) {
+                $('#accessory .section-content .row').append($(item));
+                accessoryLimit++;
+            } else 
+                return;
         }
     });
 
