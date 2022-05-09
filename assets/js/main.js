@@ -45,6 +45,12 @@ $(document).ready(function() {
 
         if (product.type === 'headphone') {
             $('#headphone .section-content .row').append($(item));
+        } else if (product.type === 'music-player') {
+            $('#music-player .section-content .row').append($(item));
+        } else if (product.type === 'speaker') {
+            $('#speaker .section-content .row').append($(item));
+        } else if (product.type === 'accessory') {
+            $('#accessory .section-content .row').append($(item));
         }
     });
 
