@@ -80,10 +80,13 @@ var cart = {
         localStorage.setItem('cart', JSON.stringify(this));
     },
     loadCartFromLocalStorage: function() {
-        // this = JSON.parse(localStorage.getItem('cart'));
-        this.productsInCart = JSON.parse(localStorage.getItem('cart')).productsInCart;
-        this.totalPrice = JSON.parse(localStorage.getItem('cart')).totalPrice;
-        this.totalQuantity = JSON.parse(localStorage.getItem('cart')).totalQuantity;
+        if (this.productsInCart.length > 0) {
+
+            // this = JSON.parse(localStorage.getItem('cart'));
+            this.productsInCart = JSON.parse(localStorage.getItem('cart')).productsInCart;
+            this.totalPrice = JSON.parse(localStorage.getItem('cart')).totalPrice;
+            this.totalQuantity = JSON.parse(localStorage.getItem('cart')).totalQuantity;
+        }
         
         this.renderCart();
     },
