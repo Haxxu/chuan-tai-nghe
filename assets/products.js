@@ -106,7 +106,8 @@ const products = [
             "specification 3"
         ],
         "type": "music-player"
-    },{
+    },
+    {
         "id": 10,
         "name": "ASTELL&KERN A&ULTIMA SP2000",
         "price": 79950000,
@@ -117,7 +118,8 @@ const products = [
             "specification 3"
         ],
         "type": "music-player"
-    },{
+    },
+    {
         "id": 11,
         "name": "CAYIN N6II TITANIUM R2R LIMITED EDITION",
         "price": 45000000,
@@ -128,5 +130,113 @@ const products = [
             "specification 3"
         ],
         "type": "music-player"
+    },
+    {
+        "id": 12,
+        "name": "AUDIOENGINE A1 WIRELESS",
+        "price": 5250000,
+        "img": "p12.jpeg",
+        'specification': [
+            "specification 1",
+            "specification 2",
+            "specification 3"
+        ],
+        "type": "speaker"
+    },
+    {
+        "id": 13,
+        "name": "WHARFEDALE DS2",
+        "price": 5550000,
+        "img": "p13.jpg",
+        'specification': [
+            "specification 1",
+            "specification 2",
+            "specification 3"
+        ],
+        "type": "speaker"
+    },
+    {
+        "id": 14,
+        "name": "HARMAN KARDON GO PLAY",
+        "price": 6490000,
+        "img": "p14.jpg",
+        'specification': [
+            "specification 1",
+            "specification 2",
+            "specification 3"
+        ],
+        "type": "speaker"
+    },
+    {
+        "id": 15,
+        "name": "MARSHALL ACTON 2",
+        "price": 6450000,
+        "img": "p15.jpeg",
+        'specification': [
+            "specification 1",
+            "specification 2",
+            "specification 3"
+        ],
+        "type": "speaker"
+    },
+    {
+        "id": 16,
+        "name": "FIIO LC44C",
+        "price": 1650000,
+        "img": "p16.jpg",
+        'specification': [
+            "specification 1",
+            "specification 2",
+            "specification 3"
+        ],
+        "type": "accessory"
+    },
+    {
+        "id": 17,
+        "name": "PELICAN 1060",
+        "price": 1150000,
+        "img": "p17.jpg",
+        'specification': [
+            "specification 1",
+            "specification 2",
+            "specification 3"
+        ],
+        "type": "accessory"
+    },
+    {
+        "id": 18,
+        "name": "ĐỆM SONY MDR 100AAP",
+        "price": 500000,
+        "img": "p18.jpg",
+        'specification': [
+            "specification 1",
+            "specification 2",
+            "specification 3"
+        ],
+        "type": "accessory"
+    },
+    {
+        "id": 19,
+        "name": "GIÁ TREO TAI NGHE OMEGA COPPER COLOUR S4",
+        "price": 650000,
+        "img": "p19.jpg",
+        'specification': [
+            "specification 1",
+            "specification 2",
+            "specification 3"
+        ],
+        "type": "accessory"
+    },
+    {
+        "id": 20,
+        "name": "WIREWORLD SOLSTICE 8 SPEAKER CABLE PAIRS 2.5M",
+        "price": 4790000,
+        "img": "p20.jpg",
+        'specification': [
+            "specification 1",
+            "specification 2",
+            "specification 3"
+        ],
+        "type": "accessory"
     },
 ]
