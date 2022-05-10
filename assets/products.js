@@ -71,4 +71,62 @@ const products = [
         ],
         "type": "headphone"
     },
+    {
+        "id": 7,
+        "name": "FIIO M11 PLUS LTD ( STAINLESS STEEL )",
+        "price": 22990000,
+        "img": "p7.jpg",
+        'specification': [
+            "specification 1",
+            "specification 2",
+            "specification 3"
+        ],
+        "type": "music-player"
+    },
+    {
+        "id": 8,
+        "name": "ASTELL&KERN A&ULTIMA SP2000T",
+        "price": 69000000,
+        "img": "p8.png",
+        'specification': [
+            "specification 1",
+            "specification 2",
+            "specification 3"
+        ],
+        "type": "music-player"
+    },
+    {
+        "id": 9,
+        "name": "SONY MRD Z1R",
+        "price": 39990000,
+        "img": "p6.jpg",
+        'specification': [
+            "specification 1",
+            "specification 2",
+            "specification 3"
+        ],
+        "type": "music-player"
+    },{
+        "id": 10,
+        "name": "SONY MRD Z1R",
+        "price": 39990000,
+        "img": "p6.jpg",
+        'specification': [
+            "specification 1",
+            "specification 2",
+            "specification 3"
+        ],
+        "type": "music-player"
+    },{
+        "id": 11,
+        "name": "SONY MRD Z1R",
+        "price": 39990000,
+        "img": "p6.jpg",
+        'specification': [
+            "specification 1",
+            "specification 2",
+            "specification 3"
+        ],
+        "type": "music-player"
+    },
 ]
