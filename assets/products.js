@@ -97,9 +97,9 @@ const products = [
     },
     {
         "id": 9,
-        "name": "SONY MRD Z1R",
-        "price": 39990000,
-        "img": "p6.jpg",
+        "name": "FIIO M11",
+        "price": 10990000,
+        "img": "p9.jpg",
         'specification': [
             "specification 1",
             "specification 2",
@@ -108,9 +108,9 @@ const products = [
         "type": "music-player"
     },{
         "id": 10,
-        "name": "SONY MRD Z1R",
-        "price": 39990000,
-        "img": "p6.jpg",
+        "name": "ASTELL&KERN A&ULTIMA SP2000",
+        "price": 79950000,
+        "img": "p10.jpg",
         'specification': [
             "specification 1",
             "specification 2",
@@ -119,9 +119,9 @@ const products = [
         "type": "music-player"
     },{
         "id": 11,
-        "name": "SONY MRD Z1R",
-        "price": 39990000,
-        "img": "p6.jpg",
+        "name": "CAYIN N6II TITANIUM R2R LIMITED EDITION",
+        "price": 45000000,
+        "img": "p11.jpg",
         'specification': [
             "specification 1",
             "specification 2",
