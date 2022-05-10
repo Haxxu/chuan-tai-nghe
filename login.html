@@ -13,8 +13,10 @@
     <!-- <link ref="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.css" rel="stylesheet" /> -->
     <!-- Base CSS -->
     <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/login.css">
     <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/main.css">
+    
 </head>
 <body class="bg-color">
     
@@ -81,7 +83,7 @@
                                     </a>
                                 </li>  
                                 <li class="nav-item">
-                                    <a class="nav-link" href="login.html">Đăng Nhập</a>
+                                    <a class="nav-link" href="">Đăng Nhập</a>
                                 </li>
                                 
                             </ul>
@@ -176,112 +178,53 @@
         </div>
 
         <div class="content container">
-            <section class="section slider">
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <a href="#" class="carousel-item active">
-                            <img src="./assets/images/slider-image/Moondrop-01.jpg" alt="...">
-                        </a>
-                        <a href="#" class="carousel-item">
-                            <img src="./assets/images/slider-image/ak44987.jpg" alt="...">
-                        </a>
-                        <a href="#" class="carousel-item">
-                            <img src="./assets/images/slider-image/CAYIN C9-01.jpg" alt="...">
-                        </a>
-                        <a href="#" class="carousel-item">
-                            <img src="./assets/images/slider-image/DUNU SST112-01.jpg" alt="...">
-                        </a>
-                        
-                        <a href="#" class="carousel-item">
-                            <img src="./assets/images/slider-image/DUNU4001sl.jpg" alt="...">
-                        </a>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+            <div class="wrapper">
+                <div class="title-text">
+                  <div class="title login">Login Form</div>
+                  <div class="title signup">Signup Form</div>
                 </div>
-            </section>
-            
-            <section id="headphone" class="section mt-5">
-                <div class="section-title">
-                    <h4>
-                        <i class='bx bx-headphone' ></i>
-                        Tai nghe
-                    </h4>
-                    <a href="#">
-                        Xem tất cả
-                        <i class='bx bx-chevron-right' ></i>
-                    </a>
+                <div class="form-container">
+                  <div class="slide-controls">
+                    <input type="radio" name="slide" id="login" checked>
+                    <input type="radio" name="slide" id="signup">
+                    <label for="login" class="slide login">Login</label>
+                    <label for="signup" class="slide signup">Signup</label>
+                    <div class="slider-tab"></div>
+                  </div>
+                  <div class="form-inner">
+                    <form action="#" class="login">
+                      <div class="field">
+                        <input type="text" placeholder="Email Address" required>
+                      </div>
+                      <div class="field">
+                        <input type="password" placeholder="Password" required>
+                      </div>
+                      <div class="pass-link"><a href="#">Forgot password?</a></div>
+                      <div class="field btn">
+                        <div class="btn-layer"></div>
+                        <input type="submit" value="Login">
+                      </div>
+                      <div class="signup-link">Not a member? <a href="">Signup now</a></div>
+                    </form>
+                    <form action="#" class="signup">
+                      <div class="field">
+                        <input type="text" placeholder="Email Address" required>
+                      </div>
+                      <div class="field">
+                        <input type="password" placeholder="Password" required>
+                      </div>
+                      <div class="field">
+                        <input type="password" placeholder="Confirm password" required>
+                      </div>
+                      <div class="field btn">
+                        <div class="btn-layer"></div>
+                        <input type="submit" value="Signup">
+                      </div>
+                    </form>
+                  </div>
                 </div>
-                <div class="section-content mt-1">
-                    <div class="row">
-                    </div>
-                </div>
-            </section>
-
-            <section id="music-player" class="section mt-5">
-                <div class="section-title">
-                    <h4>
-                        <i class='bx bxs-music'></i>
-                        Máy nghe nhạc
-                    </h4>
-                    <a href="#">
-                        Xem tất cả
-                        <i class='bx bx-chevron-right' ></i>
-                    </a>
-                </div>
-                <div class="section-content mt-1">
-                    <div class="row">
-                    </div>
-                </div>
-            </section>
-
-            <section id="speaker" class="section mt-5">
-                <div class="section-title">
-                    <h4>
-                        <i class='bx bx-speaker' ></i>
-                        Loa
-                    </h4>
-                    <a href="#">
-                        Xem tất cả
-                        <i class='bx bx-chevron-right' ></i>
-                    </a>
-                </div>
-                <div class="section-content mt-1">
-                    <div class="row">
-                    </div>
-                </div>
-            </section>
-
-            <section id="accessory" class="section mt-5">
-                <div class="section-title">
-                    <h4>
-                        <i class='bx bx-plus-circle' ></i>
-                        Phụ kiện
-                    </h4>
-                    <a href="#">
-                        Xem tất cả
-                        <i class='bx bx-chevron-right' ></i>
-                    </a>
-                </div>
-                <div class="section-content mt-1">
-                    <div class="row">
-                    </div>
-                </div>
-            </section>
-
+              </div>
+          
         </div>
 
         <!-- Footer -->
@@ -442,6 +385,6 @@
     <script src="./assets/js/cart.js"></script>
     <!-- Main JS -->
     <script src="./assets/js/main.js"></script>
-
+    <script src="./assets/login.js"></script>
 </body>
 </html>
