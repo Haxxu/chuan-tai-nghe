@@ -59,8 +59,7 @@
   left: 0;
   z-index: 0;
   border-radius: 15px;
-  background: -webkit-linear-gradient(left,#003366,#004080,#0059b3
-, #0073e6);
+  background: #282d31;
   transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
 }
 input[type="radio"]{
@@ -128,12 +127,21 @@ form .field input:focus::placeholder{
 }
 .form-inner form .signup-link{
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
+  color: #616263;
 }
-.form-inner form .pass-link a,
+
+.form-inner form .pass-link a{
+  color: #616263;
+}
 .form-inner form .signup-link a{
-  color: #1a75ff;
+  
   text-decoration: none;
+}
+.form-inner form .pass-link {
+  margin-top: 13px ;
+  margin-left: 15px;
+  margin-bottom: -8px;
 }
 .form-inner form .pass-link a:hover,
 .form-inner form .signup-link a:hover{
@@ -151,10 +159,10 @@ form .btn .btn-layer{
   width: 300%;
   position: absolute;
   left: -100%;
-  background: -webkit-linear-gradient(right,#003366,#004080,#0059b3
-, #0073e6);
+  background: #282d31;
   border-radius: 15px;
   transition: all 0.4s ease;;
+  margin-top: -6px;
 }
 form .btn:hover .btn-layer{
   left: 0;
