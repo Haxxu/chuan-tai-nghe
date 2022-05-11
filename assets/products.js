@@ -239,4 +239,148 @@ const products = [
         ],
         "type": "accessory"
     },
+    {
+        "id": 21,
+        "name": "SENDY AUDIO PEACOCK",
+        "price": 34500000,
+        "img": "p1.jpg",
+        'specification': [
+            "specification 1",
+            "specification 2",
+            "specification 3"
+        ],
+        "type": "headphone"
+    },
+    {
+        "id": 22,
+        "name": "UNIQUE MELODY MEST MKII",
+        "price": 35590000,
+        "img": "p2.jpeg",
+        'specification': [
+            "specification 1",
+            "specification 2",
+            "specification 3"
+        ],
+        "type": "headphone"
+    },
+    {
+        "id": 23,
+        "name": "FIIO M11 PLUS LTD ( STAINLESS STEEL )",
+        "price": 22990000,
+        "img": "p7.jpg",
+        'specification': [
+            "specification 1",
+            "specification 2",
+            "specification 3"
+        ],
+        "type": "music-player"
+    },
+    {
+        "id": 24,
+        "name": "ASTELL&KERN A&ULTIMA SP2000T",
+        "price": 69000000,
+        "img": "p8.png",
+        'specification': [
+            "specification 1",
+            "specification 2",
+            "specification 3"
+        ],
+        "type": "music-player"
+    },
+    {
+        "id": 25,
+        "name": "FIIO M11",
+        "price": 10990000,
+        "img": "p9.jpg",
+        'specification': [
+            "specification 1",
+            "specification 2",
+            "specification 3"
+        ],
+        "type": "music-player"
+    },
+    {
+        "id": 26,
+        "name": "AUDIOENGINE A1 WIRELESS",
+        "price": 5250000,
+        "img": "p12.jpeg",
+        'specification': [
+            "specification 1",
+            "specification 2",
+            "specification 3"
+        ],
+        "type": "speaker"
+    },
+    {
+        "id": 27,
+        "name": "WHARFEDALE DS2",
+        "price": 5550000,
+        "img": "p13.jpg",
+        'specification': [
+            "specification 1",
+            "specification 2",
+            "specification 3"
+        ],
+        "type": "speaker"
+    },
+    {
+        "id": 28,
+        "name": "HARMAN KARDON GO PLAY",
+        "price": 6490000,
+        "img": "p14.jpg",
+        'specification': [
+            "specification 1",
+            "specification 2",
+            "specification 3"
+        ],
+        "type": "speaker"
+    },
+    {
+        "id": 29,
+        "name": "MARSHALL ACTON 2",
+        "price": 6450000,
+        "img": "p15.jpeg",
+        'specification': [
+            "specification 1",
+            "specification 2",
+            "specification 3"
+        ],
+        "type": "speaker"
+    },
+    {
+        "id": 30,
+        "name": "FIIO LC44C",
+        "price": 1650000,
+        "img": "p16.jpg",
+        'specification': [
+            "specification 1",
+            "specification 2",
+            "specification 3"
+        ],
+        "type": "accessory"
+    },
+    {
+        "id": 31,
+        "name": "PELICAN 1060",
+        "price": 1150000,
+        "img": "p17.jpg",
+        'specification': [
+            "specification 1",
+            "specification 2",
+            "specification 3"
+        ],
+        "type": "accessory"
+    },
+    {
+        "id": 32,
+        "name": "ĐỆM SONY MDR 100AAP",
+        "price": 500000,
+        "img": "p18.jpg",
+        'specification': [
+            "specification 1",
+            "specification 2",
+            "specification 3"
+        ],
+        "type": "accessory"
+    },
 ]
