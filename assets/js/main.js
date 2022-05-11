@@ -27,7 +27,7 @@ $(document).ready(function() {
         item = `
             <div class="col-12 col-md-6 col-lg-4 col-xl-3">
                 <div class="item">
-                    <a href="#" class="item-img-box">
+                    <a href="./chitiet.html" class="item-img-box">
                         <img src="${getUrlImage(product.img)}" alt="" class="item-img">
                     </a>
                     <div class="item-text">

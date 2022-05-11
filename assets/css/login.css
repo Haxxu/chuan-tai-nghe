@@ -147,14 +147,14 @@ form .field input:focus::placeholder{
 .form-inner form .signup-link a:hover{
   text-decoration: underline;
 }
-form .btn{
+form .l-btn{
   height: 50px;
   width: 100%;
   border-radius: 15px;
   position: relative;
   overflow: hidden;
 }
-form .btn .btn-layer{
+form .l-btn .l-btn-layer{
   height: 100%;
   width: 300%;
   position: absolute;
@@ -164,10 +164,10 @@ form .btn .btn-layer{
   transition: all 0.4s ease;;
   margin-top: -6px;
 }
-form .btn:hover .btn-layer{
+form .l-btn:hover .l-btn-layer{
   left: 0;
 }
-form .btn input[type="submit"]{
+form .l-btn input[type="submit"]{
   height: 100%;
   width: 100%;
   z-index: 1;
