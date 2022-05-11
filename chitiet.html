@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuẩn Tai Nghe</title>
+    <!-- Box Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- MDB -->
+    <!-- <link ref="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.css" rel="stylesheet" /> -->
+    <!-- Base CSS -->
+    <link rel="stylesheet" href="assets/css/base.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body class="bg-color">
+
+    <div class="wrapper bg-color text-color">
+        <span class="add-cart-effect"><i class='bx bxs-cart bx-tada' ></i></span>
+
+        <header class="header bg-header-color">
+            <div class="container-fluid px-0">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container">
+                        <a class="navbar-brand d-flex align-items-center" href="./index.html">
+                            <i class='bx bx-headphone bx-tada bx-rotate-90 main-color me-1' ></i>
+                            Chuan<span class=" main-color">TaiNghe</span>
+                        </a>
+                        <button class="navbar-toggler" 
+                                style="border-color: var(--text-header-color);" 
+                                type="button" 
+                                data-bs-toggle="collapse" 
+                                data-bs-target="#navbarSupportedContent" 
+                                aria-controls="navbarSupportedContent" 
+                                aria-expanded="false" 
+                                aria-label="Toggle navigation"
+                        >
+                            <i class='bx bx-menu text-header-color'></i>
+
+                        </button>
+                        <div class="collapse navbar-collapse row" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 px-2">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="./index.html">Trang chủ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Tai Nghe</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">Máy Nghe Nhạc</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">Loa</a>
+                                </li>
+                                <li class="nav-item dropdown me-auto">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Phụ kiện
+                                    </a>
+                                    <ul class="dropdown-menu bg-header-color" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">Cáp tai nghe</a></li>
+                                        <li><a class="dropdown-item" href="#">Đệm tai nghe</a></li>
+                                        <li><a class="dropdown-item" href="#">Phụ kiện tai nghe</a></li>
+                                    </ul>
+                                </li>
+                                
+                                <form class="d-flex me-auto">
+                                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-outline-light" style="position: relative;" type="submit">
+                                        <i class='bx bx-search' style="position: relative; top: 4px;"></i>
+                                    </button>
+                                </form>
+                                <li class="nav-item">
+                                    <a type="button" data-bs-toggle="modal" data-bs-target="#cartModal" class="nav-link d-flex align-items-center cart" href="">
+                                        <span id="total-quantity" class="badge rounded-pill badge-notification bg-danger">0</span>
+                                        <i class='bx bx-cart me-1'></i>
+                                        Giỏ hàng
+                                    </a>
+                                </li>  
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">Đăng Nhập</a>
+                                </li>
+                                
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </nav>
+
+            </div>
+            
+
+        </header>
+
+        <!-- detail -->
+
+        <div class="card card-body mb-50">
+            <div class="row gutter-20">
+                <div class="col-lg-7 mb-20">
+                    <div class="position-relative h-100">
+                        <artitle class="preview">
+                            <div class="preview_thumb js-thumb">
+                                <div class="preview_thumb-float">
+                                    <div class="preview_thumb-prev" tabindex="0" role="button" aria-label="previous slide">
+                                        <i class="fa fa-angle-up"></i>
+                                    </div>
+                                    <div class="preview_thumb-next" tabindex="0" role="button" aria-label="next slide">
+                                        <i class="fa fa-angle-down"></i>
+                                    </div>
+                                    <div class="swiper-container swiper-container-initialized swiper-container-thumbs swiper-container-horrizontal" style="cursor: grab;">
+                                        <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-231.875px, 0px, 0px);">
+                                            <div class="swiper-slide swiper-slide-duplicate" style="width: 82.75px; margin-right: 10px; "data-swiper-silde-index="1" >
+                                                <div class="preview_thumb-wrap">
+                                                    <img src="./assets/images/item-image/p1.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide swiper-slide-duplicate" style="width: 82.75px; margin-right: 10px; "data-swiper-silde-index="2" >
+                                                <div class="preview_thumb-wrap">
+                                                    <img src="./assets/images/item-image/p2.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide swiper-slide-duplicate" style="width: 82.75px; margin-right: 10px; "data-swiper-silde-index="3" >
+                                                <div class="preview_thumb-wrap">
+                                                    <img src="./assets/images/item-image/p3.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide swiper-slide-duplicate" style="width: 82.75px; margin-right: 10px; "data-swiper-silde-index="4" >
+                                                <div class="preview_thumb-wrap">
+                                                    <img src="./assets/images/item-image/p4.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide swiper-slide-duplicate" style="width: 82.75px; margin-right: 10px; "data-swiper-silde-index="5" >
+                                                <div class="preview_thumb-wrap">
+                                                    <img src="./assets/images/item-image/p5.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-prev " style="width: 82.75px; margin-right: 10px; "data-swiper-silde-index="6" >
+                                                <div class="preview_thumb-wrap">
+                                                    <img src="./assets/images/item-image/p6.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide swiper-slide-active swiper-slide-thumb-active" style="width: 82.75px; margin-right: 10px;" data-swiper-slide-index="1">
+                                                <div class="preview_thumb-wrap">
+                                                    <img src="./assets/images/item-image/p1.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide swiper-slide-next" style="width: 82.75px; margin-right: 10px" data-swiper-slide-index="2">
+                                                <div class="preview_thumb-wrap">
+                                                    <img src="./assets/images/item-image/p2.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide" style="width: 82.75px; margin-right: 10px" data-swiper-slide-index="3">
+                                                <div class="preview_thumb-wrap">
+                                                    <img src="./assets/images/item-image/p3.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide" style="width: 82.75px; margin-right: 10px" data-swiper-slide-index="4">
+                                                <div class="preview_thumb-wrap">
+                                                    <img src="./assets/images/item-image/p4.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide swiper-slide-duplicate-prev" style="width: 82.75px; margin-right: 10px" data-swiper-slide-index="5">
+                                                <div class="preview_thumb-wrap">
+                                                    <img src="./assets/images/item-image/p5.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active swiper-slide-thumb-active" style="width: 82.75px; margin-right: 10px;" data-swiper-slide-index="1">
+                                                <div class="preview_thumb-wrap">
+                                                    <img src="./assets/images/item-image/p1.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" style="width: 82.75px; margin-right: 10px" data-swiper-slide-index="2">
+                                                <div class="preview_thumb-wrap">
+                                                    <img src="./assets/images/item-image/p2.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide swiper-slide-duplicate" style="width: 82.75px; margin-right: 10px" data-swiper-slide-index="3">
+                                                <div class="preview_thumb-wrap">
+                                                    <img src="./assets/images/item-image/p3.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide swiper-slide-duplicate" style="width: 82.75px; margin-right: 10px" data-swiper-slide-index="4">
+                                                <div class="preview_thumb-wrap">
+                                                    <img src="./assets/images/item-image/p4.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="preview_frame js-preview">
+                                <div class="preview_frame-wrap">
+                                    <div class="swiper-container swiper-container-fade swiper-container-initialized swiper-container-horizontal">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide swiper-slide-active" style="width: 409px; opacity: 1; transform: translate3d (0px, 0px, 0px);">
+                                                <div class="preview_iwrap zoom" data-zoom-image="https://chuantainghe.com/assets/images/item-image/p1.jpg" style="position: relative; overflow: hidden;">
+                                                    <img src="./assets/images/item-image/p1.jpg">
+                                                    <img role="presentation" src="./assets/images/item-image/p1.jpg" class="zoomImg" style="position: absolute; top: -55.515px; left: -579.456px; opacity: 0; width: 1296px; height: 864px; border: none; max-width: none; max-height: none;">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide swiper-slide-next" style="width: 409px; opacity: 0; transform: translate3d (-409px, 0px, 0px);">
+                                                <div class="preview_iwrap zoom" data-zoom-image="https://chuantainghe.com/assets/images/item-image/p2.jpg" style="position: relative; overflow: hidden;">
+                                                    <img src="./assets/images/item-image/p2.jpg">
+                                                    <img role="presentation" src="https://chuantainghe.com/assets/images/item-image/p2.jpg" class="zoomImg" style="position: absolute; top: 0px; left: 0px; opacity: 0; width: 1296px; height: 963px; border: none; max-width: none; max-height: none;">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide" style="width: 409px; opacity: 0; transform: translate3d (-818px, 0px, 0px);">
+                                                <div class="preview_iwrap zoom" data-zoom-image="https://chuantainghe.com/assets/images/item-image/p3.jpg" style="position: relative; overflow: hidden;">
+                                                    <img src="./assets/images/item-image/p3.jpg">
+                                                    <img role="presentation" src="https://chuantainghe.com/assets/images/item-image/p3.jpg" class="zoomImg" style="position: absolute; top: 0px; left: 0px; opacity: 0; width: 1296px; height: 864px; border: none; max-width: none; max-height: none;">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide" style="width: 409px; opacity: 0; transform: translate3d (-1227px, 0px, 0px);">
+                                                <div class="preview_iwrap zoom" data-zoom-image="https://chuantainghe.com/assets/images/item-image/p4.jpg" style="position: relative; overflow: hidden;">
+                                                    <img src="./assets/images/item-image/p4.jpg">
+                                                    <img role="presentation" src="https://chuantainghe.com/assets/images/item-image/p4.jpg" class="zoomImg" style="position: absolute; top: 0px; left: 0px; opacity: 0; width: 1296px; height: 864px; border: none; max-width: none; max-height: none;">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide" style="width: 409px; opacity: 0; transform: translate3d (-1636px, 0px, 0px);">
+                                                <div class="preview_iwrap zoom" data-zoom-image="https://chuantainghe.com/assets/images/item-image/p5.jpg" style="position: relative; overflow: hidden;">
+                                                    <img src="./assets/images/item-image/p5.jpg">
+                                                    <img role="presentation" src="https://chuantainghe.com/assets/images/item-image/p5.jpg" class="zoomImg" style="position: absolute; top: 0px; left: 0px; opacity: 0; width: 1296px; height: 864px; border: none; max-width: none; max-height: none;">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide" style="width: 409px; opacity: 0; transform: translate3d (-2045px, 0px, 0px);">
+                                                <div class="preview_iwrap zoom" data-zoom-image="https://chuantainghe.com/assets/images/item-image/p6.jpg" style="position: relative; overflow: hidden;">
+                                                    <img src="./assets/images/item-image/p6.jpg">
+                                                    <img role="presentation" src="https://chuantainghe.com/assets/images/item-image/p6jpg" class="zoomImg" style="position: absolute; top: 0px; left: 0px; opacity: 0; width: 800px; height: 800px; border: none; max-width: none; max-height: none;">
+                                                </div>
+                                            </div>
+                                            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </artitle>
+                    </div>
+                </div>
+                <div class="col-lg-5 mb-20">
+                    <h1 class="text-20 text-uppercase font-weight-500 border-bottom mb-12 pb-10">Sendy Auto Peacock</h1>
+                    <p class="text-24 font-weight-bold text-red mb-12">"34.500.000VNĐ"
+                        <del class="text-16 text-muted ml-3">36.000.000VNĐ</del>
+                    </p>
+                    <div class="nav-algin-items-center">
+                        <span class="mr-1 mb-12">Tình trạng: </span>
+                        <span class="text-red mr-3 mb-12">Còn hàng</span>
+                    </div>
+                    <p class="mb-12">Bảo hành: 12 tháng</p>
+                    <a class="btn btn-pink btn-block btn-lg mb-10 rounded-0" style="color: var(--main-color); text-transform: uppercase;" href="./payment.html">Mua Ngay</a>
+                    <div class="product-intro js-product-intro">
+                        <div class="product-intro-btn js-product-intro-btn">
+                            <span>Xem thêm</span>
+                            <i class="fa fa-angle-double-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <ul class="nav nav-tabs mb-20 detail-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" role="tab" data-toggle="tab">Thông Số Kỹ Thuật</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" role="tab" data-toggle="tab">Video</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" role="tab" data-toggle="tab">Review</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" role="tab" data-toggle="tab">Bình Luận</a>
+                    </li>
+                </ul>
+                <div class="post-content tab-content mb-20" style="overflow: hidden;">
+                    <div class="tab-pane fade active show" id="specifications" role="tabpanel">
+                        <h3 data-mce-fragment="1" style="box-sizing: border-box; margin: 0px 0px27.5px; font-family: Helvetica, Arial, san-serif; font-weight: var(--font-weight-header); overflow-wrap: break-word; font-size: calc (((var(--font-size-header))/(var(--font-size-base)))*1em);color: rgb(51, 50, 50); ">Sendy Auto PeaCock</h3>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer text-center text-lg-start bg-header-color text-muted text-header-color">
+            <!-- Section: Social media -->
+            <section
+            class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+            >
+                <!-- Left -->
+                <div class="me-5 d-none d-lg-block text-header-color">
+                    <span>Get connected with us on social networks:</span>
+                </div>
+                <!-- Left -->
+            
+                <!-- Right -->
+                <div>
+                    <a href="" class="me-4">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                    <a href="" class="me-4">
+                        <i class='bx bxl-twitter' ></i>
+                    </a>
+                    <a href="" class="me-4">
+                        <i class='bx bxl-google' ></i>
+                    </a>
+                    <a href="" class="me-4">
+                        <i class='bx bxl-instagram' ></i>
+                    </a>
+                    <a href="" class="me-4">
+                        <i class='bx bxl-linkedin' ></i>
+                    </a>
+                    <a href="" class="me-4">
+                        <i class='bx bxl-github' ></i>
+                    </a>
+                </div>
+                <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+        
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class='bx bx-diamond' ></i>
+                            Chuan Tai Nghe
+                        </h6>
+                        <p>
+                            Here you can use rows and columns to organize your footer content. Lorem ipsum
+                            dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+            
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Sản phẩm
+                        </h6>
+                        <p>
+                            <a href="#!" class="">
+                                Tai Nghe
+                            </a>
+                        </p>
+                        <p>
+                            <a href="#!" class="">
+                                Máy Nghe Nhạc
+                            </a>
+                        </p>
+                        <p>
+                            <a href="#!" class="">
+                                Loa
+                            </a>
+                        </p>
+                        <p>
+                            <a href="#!" class="">
+                                Phụ Kiện
+                            </a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+            
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Hữu ích
+                        </h6>
+                        <p>
+                            <a href="#!" class="">
+                                Điều khoản và dịch vụ
+                            </a>
+                        </p>
+                        <p>
+                            <a href="#!" class="">
+                                Feedback
+                            </a>
+                        </p>
+                        <p>
+                            <a href="#!" class="">Đơn hàng</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="">Trợ giúp</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+            
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Liên Hệ
+                        </h6>
+                        <p>
+                            <i class='bx bxs-home' ></i>
+                             Can Tho, Viet Nam</p>
+                        <p>
+                            <i class='bx bxs-envelope' ></i>
+                            chuantainghe@ctu.edu.vn
+                        </p>
+                        <p><i class='bx bxs-phone' ></i> + 01 234 567 88</p>
+                        <p><i class='bx bx-printer' ></i> + 01 234 567 89</p>
+                    </div>
+                    <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+        
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.5);">
+                © 2022 Copyright:
+                <a class="fw-bold" href="index.html">chuantainghe.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+
+        
+    </div>
+    
+
+    <!-- JQuery JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- MDB -->
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.js"></script> -->
+    <!-- Database -->
+    <script src="./assets/products.js"></script>
+    <!-- Cart -->
+    <script src="./assets/js/cart.js"></script>
+    <!-- Main JS -->
+    <script src="./assets/js/main.js"></script>
+    
+</body>
+
+</html>
